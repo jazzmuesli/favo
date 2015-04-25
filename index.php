@@ -19,7 +19,7 @@ foreach ($campaigns as $item) {?>
 <td><?=$item['description'];?></td>
 <td><?=$item['amount'];?></td>
 <td><?=$item['start_date'];?></td>
-<td><?=$item['end_date'];?></td>
+<td><?=$item['end_date'];?> <a href="decide.php?id=<?=$item['id'];?>">finished</a></td>
 <td><a href="status.php?id=<?=$item['id'];?>">status</a></td>
 </tr>
 <?php } 
