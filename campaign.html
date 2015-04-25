@@ -1,9 +1,9 @@
 <h1>Create a campaign</h1>
-<form action="users.html">
+<form action="create_campaign.php" method="post">
 <table>
 <tr>
 <td>Event</td>
-<td><input type="text" name="event_name" value="Who will become UK PM after 7th May?" size="100" /></td>
+<td><input type="text" name="name" value="Who will become UK PM after 7th May?" size="100" /></td>
 </tr>
 <tr>
 <td>description</td>
@@ -11,8 +11,14 @@
 </td>
 </tr>
 <tr>
-<td>Finish Time</td>
-<td>8th May 2015 09:00am BST</td>
+<td><label for="start_date">Start time</label></td>
+<td>
+<input type="text" id="start_date" name="start_date">
+</td>
+</tr>
+<tr>
+<td><label for="end_date">Finish Time</label></td>
+<td><input type="text" id="end_date" name="end_date"></td>
 <tr>
 <td colspan="2"><input type="submit" /></td>
 </tr>
